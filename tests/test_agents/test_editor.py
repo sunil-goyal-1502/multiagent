@@ -17,9 +17,27 @@ def config():
             "api_key": "test-key"
         },
         "agents": {
+            "researcher": {
+                "search_apis": ["google"],
+                "max_sources": 10
+            },
+            "writer": {
+                "max_tokens": 1000,
+                "temperature": 0.7
+            },
             "editor": {
                 "grammar_checker": "default",
-                "style_guide": "technical"
+                "style_guide": "technical",
+                "review_threshold": 0.8
+            },
+            "seo": {
+                "keywords_count": 5
+            },
+            "image": {
+                "generation_model": "dall-e-3"
+            },
+            "publisher": {
+                "platforms": ["wordpress"]
             }
         }
     })
