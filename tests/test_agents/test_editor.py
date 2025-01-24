@@ -23,7 +23,9 @@ def config():
             },
             "writer": {
                 "max_tokens": 1000,
-                "temperature": 0.7
+                "temperature": 0.7,
+                "style_guide": "technical",
+                "tone": "professional"
             },
             "editor": {
                 "grammar_checker": "default",
