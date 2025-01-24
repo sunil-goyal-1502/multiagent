@@ -167,7 +167,7 @@ If you use this system in your research, please cite:
 @software{multiagent_content_system,
   author = {Sunil Goyal},
   title = {Multi-Agent AI Content Creation System},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/sunil-goyal-1502/multiagent-content-system}
 }
 ```
