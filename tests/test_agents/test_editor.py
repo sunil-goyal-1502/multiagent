@@ -19,27 +19,34 @@ def config():
         "agents": {
             "researcher": {
                 "search_apis": ["google"],
-                "max_sources": 10
+                "max_sources": 10,
+                "tools": ["web_search", "academic_search"]
             },
             "writer": {
                 "max_tokens": 1000,
                 "temperature": 0.7,
                 "style_guide": "technical",
-                "tone": "professional"
+                "tone": "professional",
+                "tools": ["content_gen", "rewriter"]
             },
             "editor": {
                 "grammar_checker": "default",
                 "style_guide": "technical",
-                "review_threshold": 0.8
+                "review_threshold": 0.8,
+                "tools": ["grammar", "style_check"]
             },
             "seo": {
-                "keywords_count": 5
+                "keywords_count": 5,
+                "tools": ["keyword_research", "meta_tags"],
+                "target_score": 80
             },
             "image": {
-                "generation_model": "dall-e-3"
+                "generation_model": "dall-e-3",
+                "tools": ["image_gen", "image_edit"]
             },
             "publisher": {
-                "platforms": ["wordpress"]
+                "platforms": ["wordpress"],
+                "tools": ["cms_api", "scheduler"]
             }
         }
     })
