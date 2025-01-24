@@ -418,7 +418,7 @@ class PipelineMonitor:
         # Clear memory
         self.events = {}
         self.metrics = {}
-        self.alerts = []dumps(alert, indent=2)}\n")
+        self.alerts = []
             
         # Notify if configured
         if self.config.get("monitoring.notifications.enabled"):
