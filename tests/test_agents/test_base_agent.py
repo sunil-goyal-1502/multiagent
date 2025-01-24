@@ -1,10 +1,14 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
 import pytest
 import asyncio
 from datetime import datetime
 from unittest.mock import Mock, patch
 
-from ...src.agents.base import BaseAgent, AgentRole, Message
-from ...src.utils.config import Config
+from src.agents.base import BaseAgent, AgentRole, Message
+from src.utils.config import Config
 
 @pytest.fixture
 def config():

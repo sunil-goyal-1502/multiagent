@@ -1,9 +1,13 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
 import pytest
 from unittest.mock import Mock, patch
 from datetime import datetime
 
-from ...src.agents.editor import EditorAgent, AgentRole, Message
-from ...src.utils.config import Config
+from src.agents.editor import EditorAgent, AgentRole, Message
+from src.utils.config import Config
 
 @pytest.fixture
 def config():
