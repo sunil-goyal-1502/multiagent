@@ -199,7 +199,7 @@ class PipelineMonitor:
         # Log detailed error information
         error_log = Path(self.logs_dir) / "errors.log"
         async with aiofiles.open(error_log, 'a') as f:
-            await f.write(f"{json.dumps(event, indent=2)}\n")
+            await f.write(f"{json.dumps(alert, indent=2)}\n")
 
     async def _send_notification(self, alert: Dict) -> None:
         """Send notification for alert."""
@@ -420,10 +420,6 @@ class PipelineMonitor:
         self.events = {}
         self.metrics = {}
         self.alerts = []
-            
-        # Notify if configured
-        if self.config.get("monitoring.notifications.enabled"):
-            await self._send_notification(alert)
 
     async def _handle_resource_alert(self, alert: Dict) -> None:
         """Handle resource-related alerts."""
