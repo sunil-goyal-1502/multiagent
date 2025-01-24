@@ -21,6 +21,22 @@ def config():
             "researcher": {
                 "search_apis": ["google"],
                 "max_sources": 10
+            },
+            "writer": {
+                "max_tokens": 1000,
+                "temperature": 0.7
+            },
+            "editor": {
+                "review_threshold": 0.8
+            },
+            "seo": {
+                "keywords_count": 5
+            },
+            "image": {
+                "generation_model": "dall-e-3"
+            },
+            "publisher": {
+                "platforms": ["wordpress"]
             }
         }
     })
