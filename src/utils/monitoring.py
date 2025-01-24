@@ -443,4 +443,4 @@ class PipelineMonitor:
         """Write event to log file."""
         log_file = self.logs_dir / f"{pipeline_id}.log"
         async with aiofiles.open(log_file, 'a') as f:
-            await f.write(f"{json.
+            await f.write(f"{json.dumps(event, indent=2)}\n")
