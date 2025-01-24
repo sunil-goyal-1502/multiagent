@@ -13,6 +13,7 @@ dependencies:
   - tenacity=8.2.3
   - colorama=0.4.6
   - tqdm=4.66.1
+  - packaging=23.2
   
   # Web and Data Processing
   - requests=2.31.0
@@ -43,34 +44,38 @@ dependencies:
   
   # Additional dependencies via pip
   - pip:
+    # Core AI/ML
     - openai==1.3.0
-    - langchain-core==0.1.53
-    - langchain-community==0.0.38
-    - langsmith==0.1.0
+    - langchain-core==0.1.15
+    - langchain-community==0.0.10
+    - langsmith==0.0.66
     - rich==13.7.0
     - typer==0.9.0
+    
+    # Async and File Operations
     - aiofiles==23.2.1
     - asyncio==3.4.3
+    
+    # Text Processing
     - language-tool-python==2.7.1
-    # Grammar and Style Checking
-    - grammarbot==0.2.0
-    - language-check==1.1
     - textblob==0.17.1
-    # SEO Tools
-    - python-slugify==8.0.1
-    - schema==0.7.5
-    # Content Analysis
+    - markdown==3.5.1
+    
+    # Analysis Tools
     - readability==0.3.1
     - newspaper3k==0.2.8
-    - markdown==3.5.1
-    # Testing and Mocking
+    - python-slugify==8.0.1
+    - schema==0.7.5
+    
+    # Testing
     - pytest-mock==3.12.0
     - responses==0.24.1
     - faker==20.1.0
-    # Development Tools
+    
+    # Development and Security
     - pre-commit==3.5.0
     - bandit==1.7.5
-    - safety==2.3.5
+    - dill==0.3.7
 
 variables:
   PYTHONPATH: ${CONDA_PREFIX}/lib/python3.10/site-packages
