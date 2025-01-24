@@ -4,6 +4,7 @@ from datetime import datetime
 import json
 from pathlib import Path
 import asyncio
+import aiofiles
 
 from .config import Config
 
