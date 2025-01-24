@@ -3,9 +3,9 @@ import logging
 from datetime import datetime
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.content import ContentGenerator, StyleGuide
-from ..utils.templates import TemplateManager
-from ..utils.config import Config
+from src.utils.content import ContentGenerator, StyleGuide
+from src.utils.templates import TemplateManager
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 
