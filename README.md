@@ -119,7 +119,7 @@ See the [documentation](docs/README.md) for advanced usage and customization.
 ```
 ├── docs/                      # Documentation
 ├── examples/                  # Example usage
-├── multiagent_content/        # Main package
+├── src/        # Main package
 │   ├── agents/               # Agent implementations
 │   ├── memory/               # Memory management
 │   ├── pipeline/             # Orchestration
