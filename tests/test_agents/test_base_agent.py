@@ -3,8 +3,8 @@ import asyncio
 from datetime import datetime
 from unittest.mock import Mock, patch
 
-from multiagent_content.agents.base import BaseAgent, AgentRole, Message
-from multiagent_content.utils.config import Config
+from ...src.agents.base import BaseAgent, AgentRole, Message
+from ...src.utils.config import Config
 
 @pytest.fixture
 def config():

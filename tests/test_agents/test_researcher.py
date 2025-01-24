@@ -2,8 +2,9 @@ import pytest
 from unittest.mock import Mock, patch
 from datetime import datetime, timedelta
 
-from multiagent_content.agents import ResearchAgent, AgentRole, Message
-from multiagent_content.utils.config import Config
+from ...src.agents.researcher import ResearchAgent
+from ...src.agents.base import AgentRole, Message
+from ...src.utils.config import Config
 
 @pytest.fixture
 def config():
