@@ -4,8 +4,8 @@ import logging
 from datetime import datetime
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.research import SearchAPI, ContentAnalyzer, SourceValidator
-from ..utils.config import Config
+from src.utils.research import SearchAPI, ContentAnalyzer, SourceValidator
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 

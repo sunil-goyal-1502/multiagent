@@ -5,9 +5,9 @@ from enum import Enum
 import logging
 from abc import ABC, abstractmethod
 
-from ..memory import AgentMemory
-from ..utils.llm import LLMInterface
-from ..utils.config import Config
+from src.utils.memory import AgentMemory
+from src.utils.llm import LLMInterface
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 

@@ -3,8 +3,8 @@ import logging
 from datetime import datetime
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.publisher import ContentPublisher, QualityChecker, AssetManager
-from ..utils.config import Config
+from src.utils.publisher import ContentPublisher, QualityChecker, AssetManager
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 

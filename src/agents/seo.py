@@ -3,8 +3,8 @@ import logging
 from datetime import datetime
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.seo import KeywordAnalyzer, SEOOptimizer, MetadataGenerator
-from ..utils.config import Config
+from src.utils.seo import KeywordAnalyzer, SEOOptimizer, MetadataGenerator
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 

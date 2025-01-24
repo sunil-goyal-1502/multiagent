@@ -4,8 +4,8 @@ from datetime import datetime
 import asyncio
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.image import ImageGenerator, ImageOptimizer, ImageAnalyzer
-from ..utils.config import Config
+from src.utils.image import ImageGenerator, ImageOptimizer, ImageAnalyzer
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 

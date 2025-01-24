@@ -3,10 +3,10 @@ import logging
 from datetime import datetime
 
 from .base import BaseAgent, AgentRole, Message
-from ..utils.grammar import GrammarChecker
-from ..utils.style import StyleChecker
-from ..utils.content import ContentAnalyzer
-from ..utils.config import Config
+from src.utils.grammar import GrammarChecker
+from src.utils.style import StyleChecker
+from src.utils.content import ContentAnalyzer
+from src.utils.config import Config
 
 logger = logging.getLogger(__name__)
 
