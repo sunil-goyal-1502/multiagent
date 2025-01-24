@@ -42,7 +42,10 @@ def config():
             },
             "image": {
                 "generation_model": "dall-e-3",
-                "tools": ["image_gen", "image_edit"]
+                "tools": ["image_gen", "image_edit"],
+                "generator": "dall-e",
+                "style": "modern",
+                "size": "1024x1024"
             },
             "publisher": {
                 "platforms": ["wordpress"],

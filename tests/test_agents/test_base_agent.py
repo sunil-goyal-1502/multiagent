@@ -42,8 +42,11 @@ def config():
                 "target_score": 80
             },
             "image": {
-                "generation_model": "dall-e-3",
-                "tools": ["image_gen", "image_edit"]
+                "generator": "dall-e",           # Required field
+                "style": "modern",              # Required field
+                "generation_model": "dall-e-3",  # Optional field
+                "tools": ["image_gen", "image_edit"],
+                "size": "1024x1024"
             },
             "publisher": {
                 "platforms": ["wordpress"],
