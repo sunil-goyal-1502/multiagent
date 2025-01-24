@@ -5,11 +5,12 @@ channels:
 dependencies:
   - python=3.10
   - pip>=23.0
+  
   # Core Dependencies
-  - aiohttp=3.9.1
-  - pyyaml=6.0.1
+  - aiohttp=3.8.5           # Updated to the latest compatible version
+  - pyyaml=6.0
   - python-dotenv=1.0.0
-  - pydantic=2.5.2
+  - pydantic=1.10.11        # Langchain depends on Pydantic v1
   - tenacity=8.2.3
   - colorama=0.4.6
   - tqdm=4.66.1
@@ -18,23 +19,23 @@ dependencies:
   # Web and Data Processing
   - requests=2.31.0
   - beautifulsoup4=4.12.2
-  - pandas=2.1.3
-  - numpy=1.26.2
+  - pandas=1.5.3            # Compatible with Python 3.10
+  - numpy=1.25.2
   
   # NLP and Text Processing
   - nltk=3.8.1
-  - spacy=3.7.2
+  - spacy=3.6.1             # Ensures compatibility with Python 3.10
   - jinja2=3.1.2
   
   # Image Processing
-  - pillow=10.1.0
+  - pillow=9.5.0            # Updated for Python 3.10 compatibility
   
   # Testing and Development
-  - pytest=7.4.3
+  - pytest=7.4.2
   - pytest-asyncio=0.21.1
   - pytest-cov=4.1.0
   - flake8=6.1.0
-  - black=23.11.0
+  - black=23.3.0            # Compatible with Python 3.10
   - isort=5.12.0
   - mypy=1.7.1
   
@@ -45,17 +46,16 @@ dependencies:
   # Additional dependencies via pip
   - pip:
     # Core AI/ML
-    - openai==1.3.0
-    - langchain-core==0.1.15
-    - langchain-community==0.0.10
+    - openai==0.28.0         # Updated for compatibility
+    - langchain==0.0.338     # Latest stable version
     - langsmith==0.0.66
     - rich==13.7.0
     - typer==0.9.0
     
     # Async and File Operations
     - aiofiles==23.2.1
-    - asyncio==3.4.3
-    
+    - asyncio==3.4.3         # Explicit inclusion for async
+  
     # Text Processing
     - language-tool-python==2.7.1
     - textblob==0.17.1
@@ -84,5 +84,6 @@ variables:
   LC_ALL: en_US.UTF-8
 
 # Post-installation commands:
+# Ensure models and resources are downloaded
 # python -m spacy download en_core_web_sm
 # python -m nltk.downloader punkt averaged_perceptron_tagger wordnet
